@@ -11,14 +11,6 @@ function resetTab() {
     yellow.style.babackgroundColor = '#ffff00'
 }
 
-//funcao para o clique do usuario
-let click = (color) => {
-    clickedOrder.push(color);
-    let elementColor = createColorElement(color);
-    lightColor(elementColor, 0.5);
-    checkOrder();
-}
-
 class Game {
     constructor() {
         this.colors = [green, red, yellow, blue];
